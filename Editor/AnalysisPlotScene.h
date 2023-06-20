@@ -34,7 +34,7 @@ public:
 
 	void setFreqData(fftw_complex* freqData, int frameCount, unsigned sampleRate);
 
-	std::vector<FilterNode> getNodes() const;
+	const std::vector<FilterNode>& getNodes() const;
 
 private:
 	std::vector<FilterNode> nodes;
